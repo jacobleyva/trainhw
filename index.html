@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+
+<body>
+    <!-- <div id="container">
+
+        
+    </div>
+
+    <div>
+        <form>
+            <p>
+                <label for="Train"></label>
+                <input type="text" name="Train" id="train">
+            </p>
+            <p>
+                <label for="Destination"></label>
+                <input type="text" name="Destination" id="dst">
+            </p>
+            <p>
+                <label for="first Time"></label>
+                <input type="text" name="First Time" id="firstT">
+            </p>
+            <p>
+                <label for="Frequency"></label>
+                <input type="text" name="Frequency" id="freq">
+            </p>
+            <button id="sbmt">Submit</button>
+
+
+
+        </form>
+
+        
+    </div> -->
+    <div class="row">
+        
+        <div>
+                <table class="responsive-table">
+                        <thead>
+                          <tr>
+                              <th>Train</th>
+                              <th>Destination</th>
+                              <th>First Train</th>
+                              <th>Frequency</th>
+                          </tr>
+                        </thead>
+                        <div id="disp"></div>
+                      </table>
+        </div>
+
+            <form class="col s12">
+                <div class="row">
+                <div class="input-field col s6 train">
+                    <input id="train-name" type="text" class="validate">
+                    <label for="train_name">Train Name</label>
+                </div>
+                <div class="input-field col s6 dst">
+                    <input id="dst" type="text" class="validate">
+                    <label for="destination">Destination</label>
+                </div>
+                </div>
+                <div class="row">
+                <div class="input-field col s12 first">
+                    <input id="firstT" type="text" class="validate">
+                    <label for="First_Train">First Train</label>
+                </div>
+                <div class="row">
+                <div class="input-field col s12 freq">
+                <input id="freq" type="text" class="validate">
+                <label for="Frequency">Frequency</label>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" name="action" id="sbmt">
+                        <i class="material-icons right">Submit</i>
+                      </button>
+                
+            </form>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
